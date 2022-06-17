@@ -1,5 +1,5 @@
 // npm i uuid (unique ID generator) 
-import {BrowserRouter as Route, Router, Routes} from 'react-router-dom'
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import Header from './components/Header.jsx';
 import FeedbackList from './components/FeedbackList.jsx';
 import FeedbackStats from './components/FeedbackStats.jsx';
@@ -13,7 +13,6 @@ function App() {
 
   return (
     <FeedbackProvider>
-      <Router>
         <Header />
         <div className='container'>
           <Routes> 
@@ -33,7 +32,6 @@ function App() {
             
           </Routes>
         </div>
-      </Router>
     </FeedbackProvider>
   );
 }
