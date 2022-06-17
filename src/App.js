@@ -13,25 +13,27 @@ function App() {
 
   return (
     <FeedbackProvider>
-        <Header />
-        <div className='container'>
-          <Routes> 
-            <Route path='/' element={
-              <>
-                <FeedbackForm />
-                <FeedbackStats />
-                <FeedbackList />
-                <AboutIconLink />
-                
-              </>
-            }
-            ></Route>
-            
-            <Route path='/about' element={<AboutPage />} />
+        <Router>
+          <Header />
+          <div className='container'>
+            <Routes> 
+              <Route path='/' element={
+                <>
+                  <FeedbackForm />
+                  <FeedbackStats />
+                  <FeedbackList />
+                  <AboutIconLink />
+                  
+                </>
+              }
+              ></Route>
+              
+              <Route path='/about' element={<AboutPage />} />
 
-            
-          </Routes>
-        </div>
+              
+            </Routes>
+          </div>
+        </Router>
     </FeedbackProvider>
   );
 }
