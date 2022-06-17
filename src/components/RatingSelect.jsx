@@ -1,6 +1,3 @@
-import { useContext, useEffect, useState } from "react"
-import FeedbackContext from "../context/FeedbackContext.js"
-
 function RatingSelect({ select, selected }) {
 
     const handleChange = (e) => {
